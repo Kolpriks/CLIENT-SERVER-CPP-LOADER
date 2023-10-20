@@ -1,0 +1,10 @@
+[Unit]
+Description=My Script Service
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/python3 /путьквашему_скрипту.py
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
